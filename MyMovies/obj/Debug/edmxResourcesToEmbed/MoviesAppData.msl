@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="movieFilesModelStoreContainer" CdmEntityContainer="movieFilesEntities">
+    <EntitySetMapping Name="Table">
+      <EntityTypeMapping TypeName="movieFilesModel.Table">
+        <MappingFragment StoreEntitySet="Table">
+          <ScalarProperty Name="movieID" ColumnName="movieID" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="director" ColumnName="director" />
+          <ScalarProperty Name="seen" ColumnName="seen" />
+          <ScalarProperty Name="rating" ColumnName="rating" />
+          <ScalarProperty Name="poster" ColumnName="poster" />
+          <ScalarProperty Name="watchingDate" ColumnName="watchingDate" />
+          <ScalarProperty Name="localization" ColumnName="localization" />
+          <ScalarProperty Name="genre" ColumnName="genre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="recentlyWatched">
+      <EntityTypeMapping TypeName="movieFilesModel.recentlyWatched">
+        <MappingFragment StoreEntitySet="recentlyWatched">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="director" ColumnName="director" />
+          <ScalarProperty Name="rating" ColumnName="rating" />
+          <ScalarProperty Name="watchingDate" ColumnName="watchingDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

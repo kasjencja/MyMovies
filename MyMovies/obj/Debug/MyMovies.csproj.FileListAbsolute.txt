@@ -1,0 +1,17 @@
+C:\Users\kmrad\Documents\GitHub\MyMovies\MyMovies\bin\Debug\MyMovies.exe.config
+C:\Users\kmrad\Documents\GitHub\MyMovies\MyMovies\bin\Debug\MyMovies.exe
+C:\Users\kmrad\Documents\GitHub\MyMovies\MyMovies\bin\Debug\MyMovies.pdb
+C:\Users\kmrad\Documents\GitHub\MyMovies\MyMovies\obj\Debug\MyMovies.csprojAssemblyReference.cache
+C:\Users\kmrad\Documents\GitHub\MyMovies\MyMovies\obj\Debug\MyMovies.Properties.Resources.resources
+C:\Users\kmrad\Documents\GitHub\MyMovies\MyMovies\obj\Debug\MyMovies.csproj.GenerateResource.cache
+C:\Users\kmrad\Documents\GitHub\MyMovies\MyMovies\obj\Debug\MyMovies.csproj.CoreCompileInputs.cache
+C:\Users\kmrad\Documents\GitHub\MyMovies\MyMovies\obj\Debug\MyMovies.exe
+C:\Users\kmrad\Documents\GitHub\MyMovies\MyMovies\obj\Debug\MyMovies.pdb
+C:\Users\kmrad\Documents\GitHub\MyMovies\MyMovies\obj\Debug\MyMovies.frmStart.resources
+C:\Users\kmrad\Documents\GitHub\MyMovies\MyMovies\bin\Debug\movieFiles.mdf
+C:\Users\kmrad\Documents\GitHub\MyMovies\MyMovies\bin\Debug\movieFiles_log.ldf
+C:\Users\kmrad\Documents\GitHub\MyMovies\MyMovies\bin\Debug\EntityFramework.dll
+C:\Users\kmrad\Documents\GitHub\MyMovies\MyMovies\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\kmrad\Documents\GitHub\MyMovies\MyMovies\bin\Debug\EntityFramework.xml
+C:\Users\kmrad\Documents\GitHub\MyMovies\MyMovies\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\kmrad\Documents\GitHub\MyMovies\MyMovies\obj\Debug\MyMovies.csproj.CopyComplete
