@@ -103,6 +103,7 @@
             this.frm_Dodaj_btn_dodaj.TabIndex = 6;
             this.frm_Dodaj_btn_dodaj.Text = "Dodaj film";
             this.frm_Dodaj_btn_dodaj.UseVisualStyleBackColor = true;
+            this.frm_Dodaj_btn_dodaj.Click += new System.EventHandler(this.frm_Dodaj_btn_dodaj_Click);
             // 
             // frmDodaj
             // 
