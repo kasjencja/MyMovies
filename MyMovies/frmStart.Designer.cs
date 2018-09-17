@@ -41,8 +41,15 @@
             this.frm_Start_but_find = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.entityConnection1 = new System.Data.Entity.Core.EntityClient.EntityConnection();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.frm_Start_combob_genre = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.rfm_Start_but_losuj = new System.Windows.Forms.Button();
+            this.frm_Start_btn_dodaj = new System.Windows.Forms.Button();
+            this.frm_Start_btn_czyscBaze = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.frm_Start_dgw)).BeginInit();
             this.groupBox1.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // frm_Start_dgw
@@ -66,7 +73,7 @@
             this.frm_Start_dgw.Location = new System.Drawing.Point(395, 60);
             this.frm_Start_dgw.Name = "frm_Start_dgw";
             this.frm_Start_dgw.ReadOnly = true;
-            this.frm_Start_dgw.Size = new System.Drawing.Size(414, 308);
+            this.frm_Start_dgw.Size = new System.Drawing.Size(414, 274);
             this.frm_Start_dgw.TabIndex = 0;
             this.frm_Start_dgw.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.frm_Start_dgw_CellContentClick);
             // 
@@ -102,7 +109,7 @@
             // 
             this.frm_Start_txtb_nazwa.Location = new System.Drawing.Point(10, 35);
             this.frm_Start_txtb_nazwa.Name = "frm_Start_txtb_nazwa";
-            this.frm_Start_txtb_nazwa.Size = new System.Drawing.Size(297, 20);
+            this.frm_Start_txtb_nazwa.Size = new System.Drawing.Size(330, 20);
             this.frm_Start_txtb_nazwa.TabIndex = 1;
             this.frm_Start_txtb_nazwa.Tag = "halo";
             this.frm_Start_txtb_nazwa.Text = "Tytuł filmu";
@@ -112,7 +119,7 @@
             // 
             this.frm_Start_txtb_rezyser.Location = new System.Drawing.Point(10, 74);
             this.frm_Start_txtb_rezyser.Name = "frm_Start_txtb_rezyser";
-            this.frm_Start_txtb_rezyser.Size = new System.Drawing.Size(297, 20);
+            this.frm_Start_txtb_rezyser.Size = new System.Drawing.Size(330, 20);
             this.frm_Start_txtb_rezyser.TabIndex = 2;
             this.frm_Start_txtb_rezyser.Tag = "";
             this.frm_Start_txtb_rezyser.Text = "Reżyser filmu";
@@ -125,7 +132,7 @@
             this.groupBox1.Controls.Add(this.frm_Start_txtb_nazwa);
             this.groupBox1.Location = new System.Drawing.Point(23, 25);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(320, 181);
+            this.groupBox1.Size = new System.Drawing.Size(346, 181);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Wyszukaj film";
@@ -143,7 +150,7 @@
             // 
             // frm_Start_but_find
             // 
-            this.frm_Start_but_find.Location = new System.Drawing.Point(185, 140);
+            this.frm_Start_but_find.Location = new System.Drawing.Point(218, 136);
             this.frm_Start_but_find.Name = "frm_Start_but_find";
             this.frm_Start_but_find.Size = new System.Drawing.Size(122, 23);
             this.frm_Start_but_find.TabIndex = 4;
@@ -154,17 +161,80 @@
             // 
             this.groupBox2.Location = new System.Drawing.Point(375, 25);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(467, 372);
+            this.groupBox2.Size = new System.Drawing.Size(449, 323);
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Ostatnio oglądane";
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.rfm_Start_but_losuj);
+            this.groupBox3.Controls.Add(this.label1);
+            this.groupBox3.Controls.Add(this.frm_Start_combob_genre);
+            this.groupBox3.Location = new System.Drawing.Point(23, 222);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(346, 97);
+            this.groupBox3.TabIndex = 5;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Wybierz losowy film";
+            this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
+            // 
+            // frm_Start_combob_genre
+            // 
+            this.frm_Start_combob_genre.FormattingEnabled = true;
+            this.frm_Start_combob_genre.Location = new System.Drawing.Point(202, 66);
+            this.frm_Start_combob_genre.Name = "frm_Start_combob_genre";
+            this.frm_Start_combob_genre.Size = new System.Drawing.Size(138, 22);
+            this.frm_Start_combob_genre.TabIndex = 0;
+            this.frm_Start_combob_genre.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(7, 69);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(189, 14);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Wybierz losowy film z gatunku:";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // rfm_Start_but_losuj
+            // 
+            this.rfm_Start_but_losuj.Location = new System.Drawing.Point(68, 29);
+            this.rfm_Start_but_losuj.Name = "rfm_Start_but_losuj";
+            this.rfm_Start_but_losuj.Size = new System.Drawing.Size(193, 23);
+            this.rfm_Start_but_losuj.TabIndex = 7;
+            this.rfm_Start_but_losuj.Text = "Losuj";
+            this.rfm_Start_but_losuj.UseVisualStyleBackColor = true;
+            // 
+            // frm_Start_btn_dodaj
+            // 
+            this.frm_Start_btn_dodaj.Location = new System.Drawing.Point(23, 325);
+            this.frm_Start_btn_dodaj.Name = "frm_Start_btn_dodaj";
+            this.frm_Start_btn_dodaj.Size = new System.Drawing.Size(156, 23);
+            this.frm_Start_btn_dodaj.TabIndex = 6;
+            this.frm_Start_btn_dodaj.Text = "Dodaj nowy film";
+            this.frm_Start_btn_dodaj.UseVisualStyleBackColor = true;
+            this.frm_Start_btn_dodaj.Click += new System.EventHandler(this.frm_Start_btn_dodaj_Click);
+            // 
+            // frm_Start_btn_czyscBaze
+            // 
+            this.frm_Start_btn_czyscBaze.Location = new System.Drawing.Point(209, 325);
+            this.frm_Start_btn_czyscBaze.Name = "frm_Start_btn_czyscBaze";
+            this.frm_Start_btn_czyscBaze.Size = new System.Drawing.Size(154, 23);
+            this.frm_Start_btn_czyscBaze.TabIndex = 7;
+            this.frm_Start_btn_czyscBaze.Text = "Wyczyść bazę";
+            this.frm_Start_btn_czyscBaze.UseVisualStyleBackColor = true;
+            // 
             // frmStart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(869, 437);
+            this.ClientSize = new System.Drawing.Size(849, 374);
+            this.Controls.Add(this.frm_Start_btn_czyscBaze);
+            this.Controls.Add(this.frm_Start_btn_dodaj);
+            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.frm_Start_dgw);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
@@ -175,6 +245,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.frm_Start_dgw)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -193,6 +265,12 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.CheckBox frm_Start_chckb_rezyser;
         private System.Data.Entity.Core.EntityClient.EntityConnection entityConnection1;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.ComboBox frm_Start_combob_genre;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button rfm_Start_but_losuj;
+        private System.Windows.Forms.Button frm_Start_btn_dodaj;
+        private System.Windows.Forms.Button frm_Start_btn_czyscBaze;
     }
 }
 

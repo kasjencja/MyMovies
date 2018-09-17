@@ -52,5 +52,29 @@ namespace MyMovies
         {
 
         }
+
+        private void groupBox3_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frm_Start_btn_dodaj_Click(object sender, EventArgs e)
+        {
+            frmDodaj frmDodaj = new frmDodaj();
+            this.Hide();
+            frmDodaj.ShowDialog();
+            this.Close();
+
+        }
     }
 }
